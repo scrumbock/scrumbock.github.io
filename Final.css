@@ -89,7 +89,7 @@ li a {
   font-family: arial black;
 }
 
-.purple, #purple-panel {
+.purple, #purple-panel, .she, #she-panel, .ma, #ma-panel, .lamp, #lamp-panel, .turtle, #turtle-panel, .stacys-mom, #stacys-mom-panel {
   padding: 5px;
   text-align: center;
   background-color: black;
@@ -97,19 +97,11 @@ li a {
   border: solid 1px black;
 }
 
-#purple-panel {
+#purple-panel, #she-panel, #ma-panel, #lamp-panel, #turtle-panel, #stacys-mom-panel {
   display: none;
 }
-.she, #she-panel {
-    padding: 5px;
-  text-align: center;
-  background-color: black;
-  color: white;
-  border: solid 1px black;
-}
-#she-panel {
-  display: none;
-}
+
+
 footer {
     width: 1480px;
     height: 74px;
