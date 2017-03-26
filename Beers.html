@@ -1,0 +1,74 @@
+<!DOCTYPE>
+	<head>
+		<link rel="stylesheet" href="https://necolas.github.io/normalize.css">
+		<link rel="icon" type="image/x-icon" href="http://evilgeniusbeer.com/favicon.ico">
+		<title>The Beers</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' type='text/css' href='Final.css'/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> </script>
+        <script>
+        $(document).ready(function() {
+            $(".purple").click (function() {
+            $("#purple-panel").animate({width:'toggle'},350);
+        });
+            $(".she").click (function() {
+            $("#she-panel").animate({width: 'toggle'},350);
+            });
+        });
+        </script>
+    </head>
+    <body>
+    	<div id="beers-photo-wrap">
+            <nav class="navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                         </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="navbar">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="OurStory.html">Our Story</a></li>
+                            <li class="active"><a href="Beers.html">Beers</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="logo-image">
+            </div>
+        </div>
+        <div id="beer-panel">
+            <div class="purple">
+                <img src="FinalPics/evil_genius_monkey.jpg" width="750" height="150">
+                <div id="purple-panel">Purple Monkey Dishwasher is our robust porter made with Chocolate and Peanut Butter. We start with a world-class American-style porter recipe, which is already laden with notes of chocolate, sweet malts, caramel, and molasses, and then take it to the NEXT LEVEL by infusing it with natural chocolate and peanut butter! The final product is like a candy bar in a bottle that is deceptively quaffable despite it's strength. Just take one sip and you'll understand why this is our signature, year round porter.<br>
+                    ABV: 6.7% | IBU: 35 | MALTS: 2 Row, Crystal, Chocolate, Roasted Barley | Hops: Tettnang and Warrior | Availability: Year-Round, Draft and Bottle</div>
+            </div>
+            <div class="she">
+                <img src="FinalPics/she.jpg" width="750" height="150">
+                <div id="she-panel">I'll Have What She's Having is our Imperial Stout made with chocolate and hazelnut. This limited release strong dark beer is something only Evil Genius could come up with - a rich, creamy, over-the-top stout with layered flavors of roasted barley, molasses, chocolate, caramel, and hazelnut. Not too heavy on the palate, and with a surprisingly dry finish, this sturdy yet drinkable stout is perfect for the winter months.<br>
+                    ABV: 9.4% | IBU: 87 | Malts: 2 Row, Crystal, Black | Hops: Chocolate and Flaked Oats | Availability: January through March, Draft and Bottle</div>
+        </div>
+        <footer>
+            <div>
+                <ul>
+                    <li id="address"><a href="https://www.google.com/maps/place/Evil+Genius+Beer+Company/@39.9757234,-75.1363489,17z/data=!3m1!4b1!4m5!3m4!1s0x89c6c814d601f34f:0x12144ebfec67bdb2!8m2!3d39.9757193!4d-75.1341602" target="_blank"><h3>1727 N Front Street Philadelphia, PA 19122</h3></a></li>
+                    <li class="social-link">
+                    <a href="https://twitter.com/EvilGeniusBeer?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                        <img src="FinalPics/twitter-icon-black.png" width="43" height="43"></a>
+                    </li>
+                    <li class="social-link">
+                    <a href="https://www.facebook.com/EvilGeniusBeerCompany/?ref=ts" target="_blank">
+                        <img src="FinalPics/facebook-icon.png" width="43" height="43"></a>
+                    </li>
+                    <li class="social-link">
+                    <a href="https://www.instagram.com/evilgeniusbeer/?hl=en" target="_blank">
+                        <img src="FinalPics/instagram-icon.png" width="43" height="43"></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+  </html>

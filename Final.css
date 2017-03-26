@@ -1,30 +1,52 @@
+body {
+  background-color: black;
+  margin: 0;
+}
 #home-photo-wrap {
 	background: url(FinalPics/evil-genius-wideshot.jpg);
 	background-size: 2016px;
 	height: 700px;
 	background-repeat: no-repeat;
 }
-ul {
+
+#beers-photo-wrap {
+  background: url(FinalPics/Evil-Genius-Taps.jpg);
+  background-size: 2516px;
+  height: 1000px;
+  background-repeat: no-repeat;
+}
+
+#our-story-photo-wrap {
+  background: url(FinalPics/evil_genius_our_story.jpg);
+  background-size: 1716px;
+  height: 1200px;
+  background-repeat: no-repeat;
+}
+
+.navbar-inverse ul {
     list-style-type: none;
     margin-bottom: 1em;
     margin-left: 40em;
     margin-right: 1em;
     padding: 0em;
     overflow: hidden;
-  /*  background-color: #333;*/
 }
+
 li {
   float: left;
   margin: 0px 75px;
 }
+
 li a {
   display: block;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 29px;
   color: white;
+  text-shadow: 2em black;
 }
+
 .logo-image {
 	background: url(FinalPics/evil-genius-beer-co.jpg);
 	background-size: 100%;
@@ -35,21 +57,79 @@ li a {
   	border: 2px solid black;
   	border-radius: 100%;
   }
+
   #text-container {
-  	background-color: #000066;
+  	background-color: white;
   	background-size: 2016px;
-  	height: 300px;
-  	float: left;
+  	height: auto;
+    color: black;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 20px;
+    text-align: center;
   }
-  #map-container {
-    width: 100%;
-    height: 400px;
-    background-color: grey;
-  	float: right;
-  }
-  p {
-  	text-align: center;
-  	font-size: 20px;
-  	background: white;
-  	color: black;
-  }
+
+/*#blue-container {
+  background-color: #000066;
+  background-size: 2016px;
+  height: 100px;
+  border: solid .5em black;
+  margin-bottom: 0;
+  position: relative;
+}
+*/
+.hours {
+  padding: 4em 0 4em 0;
+}
+.hours li {
+  list-style-type: none;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 0 0 29em;
+  padding: 0;
+  font-family: arial black;
+}
+
+.purple, #purple-panel {
+  padding: 5px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border: solid 1px black;
+}
+
+#purple-panel {
+  display: none;
+}
+.she, #she-panel {
+    padding: 5px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border: solid 1px black;
+}
+#she-panel {
+  display: none;
+}
+footer {
+    width: 1480px;
+    height: 74px;
+    padding: 1em;
+    margin:  0;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: justify;
+}
+footer li {
+  list-style-type: none;
+}
+footer li #address {
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+
+li a:hover {
+    background-color: #111;
+}
