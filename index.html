@@ -4,10 +4,36 @@
 		<link rel="icon" type="image/x-icon" href="http://evilgeniusbeer.com/favicon.ico">
 		<title>Evil Genius Beer Company</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel='stylesheet' type='text/css' href='Final.css'/>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> </script>
+        <script>
+        $(document).ready (function() {
+            $("my-modal").foundation("reveal", "open")
+            // $(window).load(function(){
+      //Disply the modal popup
+        // $("#my-modal").modal("show");
+            $
+             });
+         })
+        </script>
     </head>
     <body>
+        <div id="my-modal"  class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>AGE CONFIRMATION</h2>
+                </div>
+                <div class="modal-body">
+                    <p>By clicking below, you confirm that you are at least 21 years of age.</p>
+                </div>
+                <div class="modal-footer">
+                    <button id="confirm">Confirm</button>
+                </div>
+            </div>
+        </div>
+        <div class="column">
     	<div id="home-photo-wrap">
     		<nav class="navbar-inverse">
   				<div class="container-fluid">
@@ -30,6 +56,8 @@
 			<div class="logo-image">
     		</div>
     	</div>
+    </div>
+    <div class="column">
     	<div id="text-container">
     		<div class="text-box">
     			<p><b>Open Now!</b> Our new flagship" "Beer Lab" is now open at our Front Street location in the heart of Fishtown!</p>
@@ -46,26 +74,19 @@
 
                 <p>Until we get a proper kitchen up and running, food is by necessity low-key but tasty! — Sloppy Joe sliders, hoagie dip and sweet waffle nachos covered in marshmallow fluff, Oreos, chocolate syrup and more.</p>
 
-                <p>Tours will begin April 1 and will be offered on Saturdays from noon to 4 p.m. The $6 tour comes with a free beer at the end.</p>
+                <p>Tours will begin April 1 and will be offered on Saturdays from noon to 4 p.m. The $6 tour comes with a free beer at the end.</p><br>
+
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <footer>
+            <div id="hours-bar">
+                <p>Hours: Wednesday 4pm - 10pm | Thursday 4pm - 10pm | Friday 4pm - 11pm | Saturday 12pm - 11pm | Sunday - 12pm - 9pm</p>
+                <p><a href="https://www.google.com/maps/place/Evil+Genius+Beer+Company/@39.9757234,-75.1363489,17z/data=!3m1!4b1!4m5!3m4!1s0x89c6c814d601f34f:0x12144ebfec67bdb2!8m2!3d39.9757193!4d-75.1341602" target="_blank">1727 N Front Street Philadelphia, PA 19122</a></p>
             </div>
             <div>
-                <ul class="hours">    
-                   <li> Hours: </li>
-                    <li> Wednesday - 4pm - 10pm </li><br>
-                    <li> Thursday - 4pm - 10pm </li><br>
-                    <li> Friday - 4pm - 11pm </li><br>
-                    <li> Saturday - 12pm - 11pm </li><br>
-                    <li> Sunday - 12pm - 9pm </li><br>
-                </ul>
-    		</div>
-        </div><br>
-
-       <!--  <div id="blue-container">
-        </div> -->
-        <footer>
-            <div>
                 <ul>
-                    <li id="address"><a href="https://www.google.com/maps/place/Evil+Genius+Beer+Company/@39.9757234,-75.1363489,17z/data=!3m1!4b1!4m5!3m4!1s0x89c6c814d601f34f:0x12144ebfec67bdb2!8m2!3d39.9757193!4d-75.1341602" target="_blank"><h3>1727 N Front Street Philadelphia, PA 19122</h3></a></li>
                     <li class="social-link">
                     <a href="https://twitter.com/EvilGeniusBeer?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
                         <img src="FinalPics/twitter-icon-black.png" width="43" height="43"></a>
@@ -81,5 +102,6 @@
                 </ul>
             </div>
         </footer>
+    </div>
     </body>
-    </html>
+</html>

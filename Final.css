@@ -2,6 +2,76 @@ body {
   background-color: black;
   margin: 0;
 }
+
+/*modal styling*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+#confirm {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#confirm:hover,
+#confirm:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+/* end of modal stying */
+
 #home-photo-wrap {
 	background: url(FinalPics/evil-genius-wideshot.jpg);
 	background-size: 2016px;
@@ -67,35 +137,50 @@ li a {
     font-size: 20px;
     text-align: center;
   }
+#hours-bar {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: arial black;
 
-/*#blue-container {
-  background-color: #000066;
-  background-size: 2016px;
-  height: 100px;
-  border: solid .5em black;
-  margin-bottom: 0;
-  position: relative;
 }
-*/
-.hours {
-  padding: 4em 0 4em 0;
-}
-.hours li {
+#open {
   list-style-type: none;
-  text-align: center;
-  text-decoration: none;
-  margin: 0 0 0 29em;
+  margin: 0;
   padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+#open ul {
+  list-style-type: none;
+  background-color: black;
+  float: left;
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
   font-family: arial black;
 }
 
+#beer-panel {
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .purple, #purple-panel, .she, #she-panel, .ma, #ma-panel, .lamp, #lamp-panel, .turtle, #turtle-panel, .stacys-mom, #stacys-mom-panel {
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 5px;
   text-align: center;
   background-color: black;
   color: white;
   border: solid 1px black;
 }
+ 
 
 #purple-panel, #she-panel, #ma-panel, #lamp-panel, #turtle-panel, #stacys-mom-panel {
   display: none;
@@ -117,31 +202,97 @@ li a {
 #iframe {
   float: right;
   margin: 0 1em 0 0 ;
+  clear: right;
 }
 
 footer {
     width: 1480px;
     height: 74px;
     padding: 1em;
-    margin:  0;
+    margin-left:  auto;
+    margin-right: auto;
     color: white;
     background-color: black;
     clear: left;
-    text-align: justify;
+}
+footer #hours-bar {
+  text-align: center;
+  width: 1480px;
+  margin-left: auto;
+  margin-right: auto;
 }
 footer li {
   list-style-type: none;
-}
-footer li #address {
   color: white;
-  padding: 0;
-  margin: 0;
+  padding: 3em;
+  text-align: center;
+  margin-left: 11em;
 }
 
 
 li a:hover {
-    background-color: #111;
+  background-color: gray;
 }
 .logo-image:hover {
-    cursor: hand;
+  cursor: hand;
 }
+.purple:hover, .she:hover, .ma:hover, .lamp:hover, .turtle:hover, .stacys-mom:hover {
+  cursor: hand;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .column {
+    width: 480px
+  }
+  body {
+    margin: 0;
+  }
+  .logo-image {
+    float: left;
+    margin: 0;
+    width: 203px;
+    height: 203px;
+    text-align: center;
+  }
+  footer {
+    max-width: 480px;
+    margin: 0;
+    float: left;
+  }
+  footer #hours-bar {
+    max-width: 480px;
+  }
+  #text-container {
+    max-width: 480px;
+  }
+  li {
+    float: left;
+  }
+  .navbar-inverse ul {
+    margin: 0 0 0 0 ;
+  }
+  #iframe {
+    float: none;
+    margin-bottom: 5px;
+    width: 480px;
+  }
+  #story-box {
+    max-width: 480px;
+    margin-bottom: 5px;
+    padding: none;
+    float: none;
+  }
+  #home-photo-wrap, #beers-photo-wrap, #our-story-photo-wrap {
+    background-size: 480px;
+  }
+  #beer-panel {
+    float: left;
+    max-width: 480px;
+  }
+  .purple {
+    float: left;
+    width: auto;
+  }
+}
+
+
